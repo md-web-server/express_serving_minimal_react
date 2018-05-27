@@ -1,0 +1,24 @@
+{
+  "name": "minimal-react",
+  "version": "1.0.0",
+  "description": "with package.json but no webpack or es6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeldimmitt/minimal-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaeldimmitt/minimal-react/issues"
+  },
+  "homepage": "https://github.com/michaeldimmitt/minimal-react#readme",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {}
+}
