@@ -6,7 +6,7 @@ This is a template for building React.js web apps **without browserify, babel, a
 
 Clone the repo, 
 <br/>npm install
-<br/>open `index.html` in the browser
+<br/>node server.js
 
 check out [minimal-react](https://github.com/shinglyu/minimal-react)
 <br/>Which does not require an npm install. Just a download and open.
@@ -32,6 +32,6 @@ However, in a really large application this app.js file
 <br/>Could easily be one million lines of code.
 
 For a strategy regarding returning only what a user with specific roles will ever view.
-<br/>make sure to check out [express_serving_minimal_react](https://github.com/MichaelDimmitt/express_serving_minimal_react)
+<br/>make sure to check out [express_serving_minimal_react](https://github.com/MichaelDimmitt/express_serving_minimal_react), [specifically: server.js](https://github.com/MichaelDimmitt/express_serving_minimal_react/blob/master/server.js)
 <br/>where only one html file will be sent to a user. but it will be the one for their security role.
 
