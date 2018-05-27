@@ -23,3 +23,15 @@ Note: I have added the package-lock.json to the .gitignore.
 <br/>Your project should probably keep this file. 
 <br/>However, it would be best implemented in a package-lock.json included branch.
 <br/>So as not to clutter the git history.
+
+## All scripts are brought into html document
+Having everything on the same page is often a good thing.
+<br/>It means that the page does not have to refresh.
+
+However, in a really large application this app.js file 
+<br/>Could easily be one million lines of code.
+
+For a strategy regarding returning only what a user with specific roles will ever view.
+<br/>make sure to check out [express_serving_minimal_react](https://github.com/MichaelDimmitt/express_serving_minimal_react)
+<br/>where only one html file will be sent to a user. but it will be the one for their security role.
+
