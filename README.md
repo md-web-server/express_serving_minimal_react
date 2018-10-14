@@ -1,37 +1,30 @@
-Minimal React
+Minimal React Served by Express
 =============
 This is a template for building React.js web apps **without browserify, babel, and JSX**.
 
+This project sends html to the browser based on authentication logic.</br>
+The user will see the unique html allowed by their security role. [specified_in_server.js](https://github.com/MichaelDimmitt/express_serving_minimal_react/blob/with-express/server.js)
+
 ## Installation
 
-Clone the repo, 
-<br/>npm install
-<br/>node server.js
+```bash
+git clone https://github.com/MichaelDimmitt/express_serving_minimal_react.git
+npm install
+node server.js
+```
 
-check out [minimal-react](https://github.com/shinglyu/minimal-react)
-<br/>Which does not require an npm install. Just a download and open.
+## Why is this project so minimal?
+This project is a learning repo for understanding how react can be implemented without webpack/browserfi, and babel transpiling your JSX.
 
-## Why "with-node_modules"
-HTML link's to the browser compatable javascript in the node_modules folder.
-<br/>Previously it would have linked to a cdn. 
-<br/>However, that cdn can go down. 
-<br/>Additionally it gives the latest stable.
-<br/>Using node-modules allows an easier way to quickly try out different releases.
-<br/>It also enables a specific version to be defined and never changed.
+Many use react for its readibility. This project does not have the readibility because it does not take advantage of JSX being transpiled into browser compatable javascript.
 
-Note: I have added the package-lock.json to the .gitignore. 
-<br/>Your project should probably keep this file. 
-<br/>However, it would be best implemented in a package-lock.json included branch.
-<br/>So as not to clutter the git history.
+Coding is hard without babel:</br>
+Correct, this project is about understanding that babel is transpiling your code into: [yikes!](https://github.com/MichaelDimmitt/express_serving_minimal_react/blob/with-express/js/helloWorldComponents.js)
 
-## All scripts are brought into html document
-Having everything on the same page is often a good thing.
-<br/>It means that the page does not have to refresh.
+Why the express server?</br>
+Using an express server we can control the html being sent to the browser based on authentication logic.</br>
+The user will see the unique html allowed by their security role. [specified_in_server.js](https://github.com/MichaelDimmitt/express_serving_minimal_react/blob/with-express/server.js)
 
-However, in a really large application this app.js file 
-<br/>Could easily be one million lines of code.
-
-For a strategy regarding returning only what a user with specific roles will ever view.
-<br/>make sure to check out [express_serving_minimal_react](https://github.com/MichaelDimmitt/express_serving_minimal_react), [specifically: server.js](https://github.com/MichaelDimmitt/express_serving_minimal_react/blob/master/server.js)
-<br/>where only one html file will be sent to a user. but it will be the one for their security role.
-
+## View next Project/Progression
+Arguably the reasons why someone uses react: [minimal-react-starter](https://github.com/ahfarmer/minimal-react-starter.git)
+<br/>This starter is as minimal as possible while still including Babel and Webpack. [why-minimal-react-starter-is-not-more-minimal](https://github.com/ahfarmer/minimal-react-starter#why-not-more-minimal)
